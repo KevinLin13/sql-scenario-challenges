@@ -36,7 +36,7 @@ Create the schema:
 
 ```powershell
 psql -U postgres -h localhost -p 5433 -d sql_scenario_challenges -f employee-data/database/01_schema.sql
-````
+```
 
 Insert the sample data:
 
