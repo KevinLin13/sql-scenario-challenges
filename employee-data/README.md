@@ -14,9 +14,9 @@
 
 | Level | Progress |
 | --- | ---: |
-| Basic | 0 / 10 |
-| Intermediate | 1 / 10 |
-| Advanced | 0 / 10 |
+| Basic | 10 / 10 |
+| Intermediate | 10 / 10 |
+| Advanced | 10 / 10 |
 
 ## Topics
 
@@ -28,6 +28,8 @@
 - EXISTS / NOT EXISTS
 - Common Table Expressions (CTEs)
 - Window functions
+- STRING_AGG
+- RANK
 - Views
 
 ## Run This Scenario
@@ -54,6 +56,14 @@ solutions/
 ├── intermediate/
 └── advanced/
 ```
+
+All 30 challenges have been completed and saved as independent PostgreSQL query files.
+
+### PostgreSQL-specific notes
+
+- Intermediate challenge 9 uses `STRING_AGG` as the PostgreSQL equivalent of SQLite's `GROUP_CONCAT`.
+- Advanced challenge 9 uses `ctid DESC` to model the latest physical row order for this static exercise dataset. `ctid` is not a durable business timestamp or ordering key in production systems.
+- Advanced challenge 10 uses `CREATE OR REPLACE VIEW` and then queries the created view.
 
 ## Source
 
